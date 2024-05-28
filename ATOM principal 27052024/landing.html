@@ -10,24 +10,61 @@
       </head>
 <body>
 <!-- navbar section Start-->
-<nav class="navbar navbar-expand-lg" data-bs-theme="dark">
-    <div class="container">
-      <a class="navbar-brand" href="#">ATOM</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav ms-auto">
-          <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-          <a class="nav-link" href="#">Nosotros</a>
-          <a class="nav-link" href="#">Servicios</a>
-          <a class="nav-link" href="#">Contacto</a>
+
+  <!-- <div class="navprincipal">
+    <nav class="navbar navbar-expand-lg" data-bs-theme="dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">ATOM</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav ms-auto">
+            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+            <a class="nav-link" href="Nosotros.html">Nosotros</a>
+            <a class="nav-link" href="#">Servicios</a>
+            <a class="nav-link" href="#">Contacto</a>
+          </div>
         </div>
       </div>
-    </div>
-  </nav>
+    </nav>
+  </div> -->
   <!-- navbar section End-->
-  
+  <!-- Navbar Offcanvas, Solo visible en Mobile -->
+  <div class="navoffcanvas">
+    <nav class="navbar navbar-expand-lg" data-bs-theme="dark">
+        <div class="container">
+          <a class="navbar-brand" href="#">ATOM</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel" style="background-color: #14162f;">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">ATOM</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Nosotros</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Servicios</a>
+                  </li> 
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Contacto</a>
+                  </li>    
+              </ul>         
+            </div>
+          </div>
+        </div>
+      </nav>
+  </div>
+   <!-- Navbar Offcanvas, Solo visible en Mobile -->
+   
 <section class="pruebas">
 
 <div class="container">
@@ -47,9 +84,15 @@
 </section>
 
 <div class="container text-center">
-  <div class="Servicios">
-    NUESTROS SERVICIOS
+  <div class="titulos-1">
+    OFRECEMOS SOLUCIONES TECNOLÓGICAS BASADAS EN LAS HERRAMIENTAS MICROSOFT OFFICE 365
   </div>
+ <div class="texto-1">
+  
+    Capacitamos y asesoramos a los equipos de trabajo<br> en el uso de las
+    diferentes herramientas que ofrece Microsoft. <b>Estas son algunas de ellas.</b>
+  
+ </div>
 
 </div>
 
@@ -59,34 +102,87 @@
 
 <div class="container">
   <div class="row">
-    <div class="col">
+    <div class="col-sm">
       
         <div class="text-center">
           <img src="img/P apps.png" alt="">
+          <div class="card">
+            <h5 class="card-header">Power Apps</h5>
+            <p class="card-text pt-3">Agregar Descripción</p>
+            <div class="buttons">
+              <a href="#" class="btn btn-dark">Leer más</a>
+          </div>
+          </div>
           
-          <h1>Power Apps</h1>
         </div>
     </div>
     <div class="col">
         <div class="text-center">
           <img src="img/P automate.png" alt="">
-          <h1>Power Automate</h1>
+          <div class="card">
+            <h5 class="card-header">Power Automate</h5>
+            <p class="card-text pt-3">Agregar Descripción</p>
+            <div class="buttons">
+              <a href="#" class="btn btn-dark">Leer más</a>
+          </div>
+          </div>
         </div>
     </div>
     <div class="col">
       <div class="text-center">
         <img src="img/P bi.png" alt="">
-        <h1>Power Bi</h1>
+        <div class="card">
+          <h5 class="card-header">Power Bi</h5>
+          <p class="card-text pt-3">Agregar Descripción</p>
+          <div class="buttons">
+            <a href="#" class="btn btn-dark">Leer más</a>
+        </div>
+        </div>
       </div>
     </div>
   </div>
  </div> 
-
-
-
-  
+ <!-- SECCCION MICROSOFT INFO -->
+ <!-- SECCCION LARAVEL INFO -->
+ <div class="container text-center">
+<div class="titulos-3">
+  DESARROLLAMOS CODIGO A MEDIDA SEGÚN TUS NECESIDADES
+</div>
+<div class="texto-3">
+  Laravel tiene soluciones elegantes para las características 
+  comunes que necesitan todas las aplicaciones web modernas. 
+  Es hora de empezar a crear aplicaciones increíbles y dejar de 
+  perder el tiempo buscando paquetes y reinventando la rueda.
+</div>
+ </div>
+ <div class="container pt-5">
+  <div class="row">
+    <div class="col-sm-6">
+      <div class="titulos-2">
+        Un framework,
+        <br> muchos sabores
+      </div>
+      <div class="texto-2">
+        Cree aplicaciones robustas y completas en PHP
+          utilizando Laravel y Livewire. ¿Te encanta JavaScript?
+           Construya una interfaz monolítica impulsada por React o Vue 
+           combinando Laravel con Inertia.
+      </div>
+     
+          <div class="buttons">
+            <a href="#" class="btn btn-dark">Leer más</a>
+        </div>
+    </div>
+    <div class="col-sm-6">
+      <div class="img-laravel"><img src="img/Laravel-1.jpg" alt="" class="w-100"></div>
+      
+    </div>
+  </div>
+ </div> 
+ <!-- SECCCION LARAVEL INFO -->
 </section>
 <!-----Section Setup END-->
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>

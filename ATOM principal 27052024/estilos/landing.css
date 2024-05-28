@@ -10,6 +10,8 @@ body{
   
 }
 
+
+
 .navbar{
   background-color: var(--darkblue);
 }
@@ -30,15 +32,52 @@ section.pruebas img{
 section.setup{
   padding: 70px 0;
 }
+section.setup .text-center{
+padding: 15px 0;
+border-radius: 25px;
+/* box-shadow: 27px 40px 20px -3px rgba(0,0,0,0.1); */
+
+}
 section.setup .text-center h1{
   font-size: 24px;
 }
+section.setup .buttons{
+  padding: 20px 0;
+}
 
-.Servicios{
+/*---TITULOS Y TEXTOS--------------------*/
+.titulos-1{
+  padding: 50px 0;
+  font-size: 24px;
+  font-weight: 800;
+  }
+
+  
+.titulos-2{
 padding: 50px 0;
 font-size: 38px;
 font-weight: 800;
 }
+.titulos-3{
+  padding: 50px 0;
+font-size: 24px;
+font-weight: 800;
+}
+
+.texto-1{
+  font-size: 24px;
+  color: grey;
+}
+.texto-2{
+  font-size: 18px;
+  color: grey;
+}
+.texto-3{
+  font-size: 18px;
+  color: grey;
+}
+
+/*---TITULOS Y TEXTOS--------------------*/
 
 
 /*--------------------------------- ANIMATION DEL TITULO----------------------------------- */
@@ -61,8 +100,10 @@ font-weight: 800;
       transform: scale(1);
     }
   }
-
+  /*--------------------------------- ANIMATION DEL TITULO----------------------------------- */
+/*-------RESPONSIVE Media Pantalla------------------------*/
   @media (max-width: 950px){
+  
     .breathing-text{
       font-size: 32px;
     }
@@ -75,7 +116,8 @@ font-weight: 800;
 
 /*-------RESPONSIVE MOBILEE------------------------*/
   @media (max-width: 576px){
-    section.pruebas{
+   
+section.pruebas{
       padding: 50px 0;
       background-image: none;
    
@@ -87,16 +129,36 @@ font-weight: 800;
   section.setup{
     padding: 1px 0;
   }
-  .Servicios{
+  section.setup .text-center h1{
+    font-size: 16px;
+  }
+  
+  .titulos-1{
     padding: 25px 0;
-    font-size: 38px;
+    font-size: 18px;
     font-weight: 800;
     }
-  .breathing-text{
+
+    .titulos-2{
+      text-align: center;
+    }
+    .titulos-3{
+      padding: 25px 0;
+    font-size: 18px;
+    font-weight: 800;
+    }
+
+.texto-2{
+      text-align: center;
+    }
+    .img-laravel{
+      display: none;
+    }
+    .breathing-text{
     text-align: center;
     font-size: 32px;
   }
-  .buttons{
+.buttons{
     text-align: center;
   }
   
